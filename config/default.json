@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://agung:agung@cluster-fcc.d7pa9ef.mongodb.net/punyaorg?retryWrites=true&w=majority"
+}
