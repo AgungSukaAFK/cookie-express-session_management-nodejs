@@ -1,18 +1,18 @@
 const express = require("express");
 const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
-const config = require("config");
+// const config = require("config");
 
 const appController = require("./controllers/appController");
 const isAuth = require("./middleware/is-auth");
 const connectDB = require("./config/db");
-const mongoURI = config.get("mongoURI");
+// const mongoURI = config.get("mongoURI");
 
 const app = express();
 connectDB();
 
 const store = new MongoDBStore({
-  uri: mongoURI,
+  uri: "mongodb+srv://agung:agung@cluster-fcc.d7pa9ef.mongodb.net/punyaorg?retryWrites=true&w=majority",
   collection: "mySessions",
 });
 
