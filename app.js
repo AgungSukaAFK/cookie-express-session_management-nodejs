@@ -7,6 +7,7 @@ const appController = require("./controllers/appController");
 const isAuth = require("./middleware/is-auth");
 const connectDB = require("./apakek/db");
 // const mongoURI = config.get("mongoURI");
+const path = require('path');
 
 const app = express();
 connectDB();
