@@ -5,7 +5,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 
 const appController = require("./controllers/appController");
 const isAuth = require("./middleware/is-auth");
-const connectDB = require("./config/db");
+const connectDB = require("./apakek/db");
 // const mongoURI = config.get("mongoURI");
 
 const app = express();
